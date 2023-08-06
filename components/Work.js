@@ -9,7 +9,7 @@ const Work = () => {
     <div className='flex flex-col items-start gap-[1.25rem]'>
       <div className='relative w-[288px] h-[336px] border-purple-900/30 border-2 xl:w-[352px] xl:h-[400px]'>
         <Image 
-          src={`/images/work/${items.img}`} 
+          src={`./images/work/${items.img}`} 
           alt='Card Image'
           fill={true}
           objectFit='cover'
