@@ -38,7 +38,7 @@ const Hero = () => {
                   className="hidden lg:block sm:absolute -top-4 w-max mx-auto uppercase text-neutral-50 opacity-10 text-2xl -z-10 sm:tracking-[1.75rem] ">Crafting Experience</motion.p>
                 <motion.div variants={itemani} initial="hidden" animate="visible">
                   <Image
-                      src="/images/heroImage.png"
+                      src="../images/heroImage.png"
                       width={352}
                       height={458}
                       alt="Image of Aditya"
