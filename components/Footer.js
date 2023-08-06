@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <div className='main gap-8 footerbg relative flex flex-col items-center justify-center lg:gap-11' style={{backgroundImage:"url(./images/footer/background.png)"}}>
+    <div className='main gap-8 footerbg relative flex flex-col items-center justify-center lg:gap-11' style={{backgroundImage:"url(./images/footer/background.png)", backgroundColor:"linear-gradient(0deg, #121311 0%, #121311 100%)"}}>
         <div className='flex flex-col gap-8 items-center'>  
           <h4 className='font-normal text-purple-500 uppercase'> Let's connect! </h4>
           <div className='flex flex-col items-center gap-7'>
