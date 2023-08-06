@@ -30,7 +30,7 @@ const Hero = () => {
           <hr className='undEff w-11/12 top-[194px]' />
           <hr className='undEff w-11/12 top-[156px]' />
           <hr className='undEff w-11/12 top-[246px]' />
-          <h1 className="text-center sm:text-left text-neutral-50 uppercase">TEst<br />Pandey</h1>
+          <h1 className="text-center sm:text-left text-neutral-50 uppercase">Aditya<br />Pandey</h1>
           
         </div>
         <motion.div className='z-10 sm:relative flex flex-col sm:-z-10 lg:z-0 items-center'>
@@ -38,7 +38,7 @@ const Hero = () => {
                   className="hidden lg:block sm:absolute -top-4 w-max mx-auto uppercase text-neutral-50 opacity-10 text-2xl -z-10 sm:tracking-[1.75rem] ">Crafting Experience</motion.p>
                 <motion.div variants={itemani} initial="hidden" animate="visible">
                   <Image
-                      src="../images/heroImage.png"
+                      src="./images/heroImage.png"
                       width={352}
                       height={458}
                       alt="Image of Aditya"
