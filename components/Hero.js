@@ -17,7 +17,7 @@ const itemani = {
   transition:{
     delay: 0.3,
     duration: 2,
-    ease:[0.2, 0.5, 0.8]
+    ease:'easeInOut'
   }
 
 }
