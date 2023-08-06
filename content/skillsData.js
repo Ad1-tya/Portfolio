@@ -1,0 +1,40 @@
+const skillsData={
+        Designing:[
+        {
+            id:1,
+            img:"figma.png"
+        },
+        {
+            id:2,
+            img:"photoshop.png"
+        },
+        {
+            id:3,
+            img:"illustrator.png"
+        }
+    ],
+        Frontend:[
+        {
+            id:1,
+            img:"react.png"
+        },
+        {
+            id:2,
+            img:"css.png"
+        },
+        {
+            id:3,
+            img:"html.png"
+        },
+        {
+            id:4,
+            img:"next.png"
+        },
+        {
+            id:5,
+            img:"framer.png"
+        },
+    ]
+}
+
+export default skillsData;
