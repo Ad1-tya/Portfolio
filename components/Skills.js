@@ -8,7 +8,7 @@ const Skills = () => {
   const desList = skillsData.Designing.map(items => (
     <div className='skillscard relative hover:glisten '>
       <Image 
-        src={`/images/skills/${items.img}`}
+        src={`./images/skills/${items.img}`}
         objectFit='contain'
         layout='fill'
         alt='logos'
