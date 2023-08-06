@@ -30,7 +30,7 @@ const Hero = () => {
           <hr className='undEff w-11/12 top-[194px]' />
           <hr className='undEff w-11/12 top-[156px]' />
           <hr className='undEff w-11/12 top-[246px]' />
-          <h1 className="text-center sm:text-left text-neutral-50 uppercase">Aditya<br />Pandey</h1>
+          <h1 className="text-center sm:text-left text-neutral-50 uppercase">TEst<br />Pandey</h1>
           
         </div>
         <motion.div className='z-10 sm:relative flex flex-col sm:-z-10 lg:z-0 items-center'>
