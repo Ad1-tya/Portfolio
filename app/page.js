@@ -8,20 +8,34 @@ import { motion, scroll, useDragControls, useScroll, useTransform } from 'framer
 export default function Home() {
 
   let { scrollYProgress } = useScroll()
-  let y = useTransform(scrollYProgress, [0,1], ['0%','50%'])
+  const y = window.innerWidth > 640 ? useTransform(scrollYProgress, [0, 1], ['0%', '50%']) : '0%';
 
 
   return (
     <motion.main 
-    style={{y}} 
-    className='scrollbar-hide'>
-        <Navbar />
-        <Hero />
+    style={{y, background: "url(./mainbg.png), linear-gradient(0deg, #121311 0%, #121311 100%)", backgroundBlendMode:"multiply" ,backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundAttachment:"fixed"}} 
+    className='snap-y snap-mandatory sm:snap-proximity flex flex-col overflow-y-scroll h-screen sm:h-auto scrollbar-hide'>
+      <div className='sm:snap-start'>
+      <Navbar />
+      </div>
+      <div className='snap-start'>
+      <Hero />
+      </div>
+      <div className='snap-start'>
         <Work />
-        <Education />
+      </div>
+      <div className='snap-start'>
         <Experience />
+      </div>
+      <div className='snap-start'>
         <Skills />
-        <Footer />
+      </div>
+      <div className='snap-start'>
+        <Education /> 
+      </div>
+      <div className='snap-start'>
+      <Footer />
+      </div>
     </motion.main>
   )
 }
