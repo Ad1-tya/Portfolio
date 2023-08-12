@@ -47,7 +47,7 @@ const Work = (props) => {
     <div className='flex flex-col items-start gap-[1.25rem] sm:hover:scale-105 hover:transition-all'>
       <div className='relative object-center w-[270px] h-[320px] border-purple-900/30 border-2 hover:border-purple-600 xl:w-[352px] xl:h-[400px]' >
         <Image 
-          src={`/images/work/${items.img}`} 
+          src={`./images/work/${items.img}`} 
           alt='Card Image'
           fill={true}
           className='grayscale hover:grayscale-0 snap-center object-cover transition-all'

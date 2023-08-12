@@ -8,7 +8,7 @@ const Skills = () => {
   const desList = skillsData.Designing.map(items => (
     <div className='skillscard relative'>
       <Image 
-        src={`/images/skills/${items.img}`}
+        src={`./images/skills/${items.img}`}
         objectFit='contain'
         layout='fill'
         alt='logos'
@@ -20,7 +20,7 @@ const Skills = () => {
   const feList = skillsData.Frontend.map(items => (
     <div className='skillscard relative'>
       <Image 
-        src={`/images/skills/${items.img}`}
+        src={`./images/skills/${items.img}`}
         objectFit='contain'
         layout='fill'
         alt='logos'
