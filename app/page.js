@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <motion.main 
     style={{y, background: "url(./mainbg.png), linear-gradient(0deg, #121311 0%, #121311 100%)", backgroundBlendMode:"multiply" ,backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundAttachment:"fixed"}} 
-    className='snap-y snap-mandatory sm:snap-proximity flex flex-col overflow-y-scroll h-screen sm:h-auto scrollbar-hide'>
+    className='snap-y snap-proximity flex flex-col overflow-y-scroll lg:overflow-hidden h-screen sm:h-auto scrollbar-hide'>
       <div className='sm:snap-start'>
       <Navbar />
       </div>
