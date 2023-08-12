@@ -8,7 +8,7 @@ import { motion, scroll, useDragControls, useScroll, useTransform } from 'framer
 export default function Home() {
 
   let { scrollYProgress } = useScroll()
-  const y = window.innerWidth > 640 ? useTransform(scrollYProgress, [0, 1], ['0%', '50%']) : '0%';
+  let y= useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
 
 
   return (
