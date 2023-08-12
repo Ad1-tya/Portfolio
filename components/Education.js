@@ -7,7 +7,7 @@ const Education = () => {
 
   const Cards = educationData.map(items => (
     <div className='relative w-full'>
-      <div className='flex-col-reverse gap-3 p-4 educard flex sm:flex-col items-start justify-between self-stretch w-full h-max sm:p-6 sm:w-[22rem] sm:h-[22rem] z-10 hover:glistenEdu'>
+      <div className='flex-col-reverse gap-3 p-4 educard flex sm:flex-col items-start justify-between self-stretch w-full h-max sm:p-6 sm:w-[22rem] sm:h-[22rem] z-10'>
         <div className='flex flex-col items-start gap-3'>
           <h4>{items.subject}</h4>
           <div>
@@ -26,7 +26,7 @@ const Education = () => {
   ))
 
   return (
-    <div className='main flex flex-col'>
+    <div id='education' className='main flex flex-col'>
         <Heading text="Education" />
         <div className='flex flex-col sm:flex-row items-start gap-5'>
             {Cards}

@@ -34,6 +34,10 @@ const skillsData={
             id:5,
             img:"framer.png"
         },
+        {
+            id:6,
+            img:"tailwind.png"
+        },
     ]
 }
 

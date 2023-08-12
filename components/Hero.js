@@ -1,6 +1,6 @@
 "use client";
 
-import {animate, easeIn, easeInOut, easeOut, motion} from 'framer-motion'
+import {easeInOut, motion} from 'framer-motion'
 import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components'
@@ -30,7 +30,7 @@ const Hero = () => {
           <hr className='undEff w-11/12 top-[194px]' />
           <hr className='undEff w-11/12 top-[156px]' />
           <hr className='undEff w-11/12 top-[246px]' />
-          <h1 className="text-center sm:text-left text-neutral-50 uppercase">Aditya<br />Pandey</h1>
+          <h1 className="text-center sm:text-left text-purple-500 uppercase">Aditya<br />Pandey</h1>
           
         </div>
         <motion.div className='z-10 sm:relative flex flex-col sm:-z-10 lg:z-0 items-center'>
@@ -50,7 +50,7 @@ const Hero = () => {
         <div className='lg:static items-center text-center flex flex-col sm:text-left sm:items-start gap-[1rem] mt-auto w-[22rem]'>
             <h3>UI/UX DESIGNER</h3>
             <p className='text-neutral-400'>Besides designing, I love playing games (especially VALORANT), listening to music and just chilling with my friends.</p>
-            <Button text="Hire me" type="icon-right" />
+            {/* <Button text="Hire me" type="icon-right" /> */}
         </div>       
     </div>
   )
