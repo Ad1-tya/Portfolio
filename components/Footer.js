@@ -5,12 +5,20 @@ import Link from 'next/link';
 
 const Footer = () => {
 
-  const scrollToTop = () => {
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
+
+  const scrollToTop = () => { 
+    if(isMobile) {
     const mainContainer = document.getElementById('main-container');
     if (mainContainer) {
       mainContainer.scrollTop = 0;
     }
-  };
+  }else{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });}
+  }
 
   return (
     <div className='main gap-8 lg:mt-7 footerbg relative flex flex-col items-center justify-center lg:gap-11' style={{background: "linear-gradient(0deg, #121311 0%, #121311 100%), url(./images/footer/background.png), lightgray -0.662px -193px / 100.092% 125.13%", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
