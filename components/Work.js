@@ -4,7 +4,6 @@ import React, { useRef, useEffect, useState } from 'react'
 import { Heading } from '@/components'
 import workData from '@/content/workData'
 import Image from 'next/image'
-import { render } from 'react-dom';
 
 const Work = (props) => {
 
@@ -63,7 +62,7 @@ const Work = (props) => {
   }
 
   return (
-    <div id='works' className='main top-0 flex flex-col' onScroll={scrollHandler} onMouseLeave={disableRender}>
+    <div id='works' className='main top-0 flex flex-col' onWheel={scrollHandler} onMouseLeave={disableRender}>
         <Heading text="works" />
         <div ref={cardSlide} className='relative px-0 overflow-x-auto sm:overflow-visible sm:top-1/2 sm:left-1/2 flex items-start gap-4 lg:gap-6 snap-mandatory snap-x scrollbar-hide' >
             {Cards}
