@@ -10,11 +10,20 @@ export default function Home() {
   let { scrollYProgress } = useScroll()
   let y= useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
 
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
 
   return (
     <motion.main 
-    style={{y, background: "url(./mainbg.png), linear-gradient(0deg, #121311 0%, #121311 100%)", backgroundBlendMode:"multiply" ,backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundAttachment:"fixed"}} 
-    className='snap-y snap-proximity flex flex-col overflow-y-scroll lg:overflow-hidden h-screen sm:h-auto scrollbar-hide'>
+    style={{
+      background: "url(./mainbg.png), linear-gradient(0deg, #121311 0%, #121311 100%)",
+      backgroundBlendMode: "multiply",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundAttachment: "fixed",
+      transform: isMobile
+        ? 'translateY(0%)'
+        : `translateY(${useTransform(scrollYProgress, [0, 1], ['0%', '50%'])})`,
+    }}    className='snap-y snap-proximity flex flex-col overflow-y-scroll lg:overflow-hidden h-screen sm:h-auto scrollbar-hide'>
       <div className='sm:snap-start'>
       <Navbar />
       </div>
