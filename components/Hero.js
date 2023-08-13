@@ -24,7 +24,7 @@ const itemani = {
 
 const Hero = () => {
   return (
-    <div className='pt-11 -z-10 justify-center main relative flex sm:justify-between flex-wrap sm:flex-nowrap'>
+    <div className='pt-11 z-10 justify-center main relative flex sm:justify-between flex-wrap sm:flex-nowrap'>
         <div className='absolute sm:right-8 sm:top-8 -top-7 sm:absolute lg:relative lg:inset-0 flex flex-col items-center justify-center w-[22rem] h-[22rem]'>
           <hr className='undEff w-11/12 top-[104px]' />
           <hr className='undEff w-11/12 top-[194px]' />
