@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
           </div>
         </div> 
-        <div onClick={ScrollUp} className=' hover:text-purple-500 text-neutral-50 text-base cursor-pointer hover:underline'> Back to top </div>
+        <div onClick={ScrollUp} className='select-none hover:text-purple-500 text-neutral-50 text-base cursor-pointer hover:underline'> Back to top </div>
 
     </div>
   )
