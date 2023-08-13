@@ -11,7 +11,10 @@ const Footer = () => {
     if(isMobile) {
     const mainContainer = document.getElementById('main-container');
     if (mainContainer) {
-      mainContainer.scrollTop = 0;
+      mainContainer.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
     }
   }else{
     window.scrollTo({
