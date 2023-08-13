@@ -14,14 +14,14 @@ export default function Home() {
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
 
   return (
-    <main id='main-container' className='bg-neutral-950/90'>
+    <main className='bg-neutral-950/90'>
         <Image 
         src={'./mainbg.png'}
         alt='background texture'
         objectFit='cover'
         layout='fill'
         className='bg-neutral-950 -z-10 mix-blend-multiply repea'/>
-      <motion.div  style={!isMobile ? { y } : {}} className='snap-y snap-proximity overflow-y-auto flex flex-col sm:overflow-hidden h-screen sm:h-auto scrollbar-hide'>
+      <motion.div id='main-container' style={!isMobile ? { y } : {}} className='snap-y snap-proximity overflow-y-auto flex flex-col sm:overflow-hidden h-screen sm:h-auto scrollbar-hide'>
         <div className='sm:snap-start'>
         <Navbar />
         </div>
