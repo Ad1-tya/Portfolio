@@ -14,16 +14,16 @@ export default function Home() {
 
   return (
     <motion.main 
-    style={{
+    style={{y,
       background: "url(./mainbg.png), linear-gradient(0deg, #121311 0%, #121311 100%)",
       backgroundBlendMode: "multiply",
       backgroundRepeat: "no-repeat",
       backgroundSize: "cover",
       backgroundAttachment: "fixed",
-      transform: isMobile
-        ? 'translateY(0%)'
-        : `translateY(${useTransform(scrollYProgress, [0, 1], ['0%', '50%'])})`,
-    }}    className='snap-y snap-proximity flex flex-col overflow-y-scroll lg:overflow-hidden h-screen sm:h-auto scrollbar-hide'>
+      '@media (min-width: 1024px)': {
+        transform: 'translateY(0%)',
+      },
+    }}    className='mainpage snap-y snap-proximity flex flex-col overflow-y-scroll lg:overflow-hidden h-screen sm:h-auto scrollbar-hide'>
       <div className='sm:snap-start'>
       <Navbar />
       </div>
