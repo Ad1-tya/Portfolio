@@ -14,7 +14,7 @@ export default function Home() {
   const isMobile = typeof window !== 'undefined' && window.innerWidth <= 768;
 
   return (
-    <main className='bg-neutral-950/90'>
+    <main id='main-container' className='bg-neutral-950/90'>
         <Image 
         src={'./mainbg.png'}
         alt='background texture'
