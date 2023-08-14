@@ -10,8 +10,8 @@ const Navbar = () => {
         <Image
             src="./logo.svg"
             alt="Adi Logo"
-            width={56}
-            height={24}
+            sizes='(min-width: 808px) 50vw, 100vw'
+            placeholder='blur'
         />
         <div className="hidden sm:text-neutral-500 sm:text-sm sm:flex sm:items-center sm:gap-7">
             <Link to="works" spy={true} smooth={true} offset={200} duration={500} className='hover:text-purple-500 cursor-pointer'>WORKS</Link>

@@ -25,6 +25,8 @@ const Skills = () => {
         layout='fill'
         alt='logos'
         className='max-w-[48px] max-h-[40px] m-auto inset-0'
+        sizes='(min-width: 808px) 50vw, 100vw'
+        placeholder='blur'
       />
     </div> 
   ))

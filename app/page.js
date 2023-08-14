@@ -20,6 +20,8 @@ export default function Home() {
         alt='background texture'
         objectFit='cover'
         layout='fill'
+        sizes='(min-width: 808px) 50vw, 100vw'
+        placeholder='blur'
         className='bg-neutral-950 -z-10 mix-blend-multiply repea'/>
       <motion.div id='main-container' style={!isMobile ? { y } : {}} className='snap-y snap-proximity overflow-y-scroll flex flex-col sm:overflow-hidden h-screen sm:h-auto scrollbar-hide'>
         <div className='sm:snap-start'>
