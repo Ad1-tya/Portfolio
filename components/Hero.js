@@ -40,6 +40,8 @@ const Hero = () => {
                   <Image
                   loading='lazy'
                       src="./images/heroImage.png"
+                      width={352}
+                      height={458}
                       alt="Image of Aditya"
                       className='z-10 object-cover'
                       sizes='(max-width: 808px) 50vw, 100vw'

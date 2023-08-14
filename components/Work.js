@@ -53,6 +53,7 @@ const Work = (props) => {
           objectPosition={`${percentage/4}% 100%`}
           sizes='(max-width: 808px) 50vw, 100vw'
           placeholder='blur'
+          priority={true}
         />
       </div>
       <p>{items.title}</p>
