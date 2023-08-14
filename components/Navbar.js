@@ -10,7 +10,7 @@ const Navbar = () => {
         <Image
             src="./logo.svg"
             alt="Adi Logo"
-            sizes='(min-width: 808px) 50vw, 100vw'
+            sizes='(max-width: 808px) 50vw, 100vw'
             placeholder='blur'
         />
         <div className="hidden sm:text-neutral-500 sm:text-sm sm:flex sm:items-center sm:gap-7">

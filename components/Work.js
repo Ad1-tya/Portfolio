@@ -51,7 +51,7 @@ const Work = (props) => {
           fill={true}
           className='grayscale hover:grayscale-0 snap-center object-cover transition-all'
           objectPosition={`${percentage/4}% 100%`}
-          sizes='(min-width: 808px) 50vw, 100vw'
+          sizes='(max-width: 808px) 50vw, 100vw'
           placeholder='blur'
         />
       </div>

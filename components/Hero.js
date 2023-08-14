@@ -42,7 +42,7 @@ const Hero = () => {
                       src="./images/heroImage.png"
                       alt="Image of Aditya"
                       className='z-10 object-cover'
-                      sizes='(min-width: 808px) 50vw, 100vw'
+                      sizes='(max-width: 808px) 50vw, 100vw'
                       placeholder='blur'
                   />
                 </motion.div>
