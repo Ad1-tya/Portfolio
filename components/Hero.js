@@ -1,10 +1,9 @@
 "use client";
 
 import {easeInOut, motion} from 'framer-motion'
-import React , {useState} from 'react'
+import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components'
-
 
 const itemani = {
   hidden:{
@@ -24,9 +23,6 @@ const itemani = {
 }
 
 const Hero = () => {
-
-  const [isLoading, setLoading] = useState(true);
-
   return (
     <div className='pt-11 z-10 justify-center main relative flex sm:justify-between flex-wrap sm:flex-nowrap'>
         <div className='absolute sm:right-8 sm:top-8 -top-7 sm:absolute lg:relative lg:inset-0 flex flex-col items-center justify-center w-[22rem] h-[22rem]'>
@@ -47,15 +43,7 @@ const Hero = () => {
                       width={352}
                       height={458}
                       alt="Image of Aditya"
-                      className={` z-10 object-cover
-                                    duration-700 ease-in-out group-hover:opacity-75
-                                    ${
-                                      isLoading
-                                        ? "scale-110 blur-2xl grayscale"
-                                        : "scale-100 blur-0 grayscale-0"
-                                    })`}
-                                onLoadingComplete={() => setLoading(false)}
-                  
+                      className='z-10 object-cover'
                       sizes='(max-width: 808px) 50vw, 100vw'
                       placeholder='blur'
                   />
