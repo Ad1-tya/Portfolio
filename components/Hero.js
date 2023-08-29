@@ -46,6 +46,7 @@ const Hero = () => {
                       className='z-10 object-cover'
                       sizes='(max-width: 808px) 50vw, 100vw'
                       placeholder='blur'
+                      priority={true}
                   />
                 </motion.div>
                 <hr className='w-4/5 border-neutral-500 z-20'/>
