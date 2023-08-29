@@ -2,27 +2,27 @@ const workData = [
     {
         id: 1,
         title: "Niyalo Website",
-        img: "niyaloweb.png"
+        img: "niyaloweb.webp"
     },
     {
         id: 2,
         title: "Graphics Design",
-        img: "graphic.png"
+        img: "graphic.webp"
     },
     {
         id: 3,
         title: "Dhoon",
-        img: "dhoon.png"
+        img: "dhoon.webp"
     },
     {
         id: 4,
         title: "PMCARC App",
-        img: "PMCARCApp.png"
+        img: "PMCARCApp.webp"
     },
     {
         id: 5,
         title: "TalkTune",
-        img: "TalkTuneWeb.png"
+        img: "TalkTuneWeb.webp"
     },
 ]
 

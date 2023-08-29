@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className='bg-neutral-950/90'>
         <Image 
-        src={'./mainbg.png'}
+        src={'./mainbg.webp'}
         alt='background texture'
         objectFit='cover'
         layout='fill'

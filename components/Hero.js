@@ -39,7 +39,7 @@ const Hero = () => {
                 <motion.div variants={itemani} initial="hidden" animate="visible">
                   <Image
                   loading='lazy'
-                      src="./images/heroImage.png"
+                      src="./images/heroImage.webp"
                       width={352}
                       height={458}
                       alt="Image of Aditya"

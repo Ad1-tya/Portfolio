@@ -2,41 +2,41 @@ const skillsData={
         Designing:[
         {
             id:1,
-            img:"figma.png"
+            img:"figma.webp"
         },
         {
             id:2,
-            img:"photoshop.png"
+            img:"photoshop.webp"
         },
         {
             id:3,
-            img:"illustrator.png"
+            img:"illustrator.webp"
         }
     ],
         Frontend:[
         {
             id:1,
-            img:"react.png"
+            img:"react.webp"
         },
         {
             id:2,
-            img:"css.png"
+            img:"css.webp"
         },
         {
             id:3,
-            img:"html.png"
+            img:"html.webp"
         },
         {
             id:4,
-            img:"next.png"
+            img:"next.webp"
         },
         {
             id:5,
-            img:"framer.png"
+            img:"framer.webp"
         },
         {
             id:6,
-            img:"tailwind.png"
+            img:"tailwind.webp"
         },
     ]
 }

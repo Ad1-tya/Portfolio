@@ -24,7 +24,7 @@ const Footer = () => {
   }
 
   return (
-    <div className='main gap-8 lg:mt-7 footerbg relative flex flex-col items-center justify-center lg:gap-11' style={{background: "linear-gradient(0deg, #121311 0%, #121311 100%), url(./images/footer/background.png), lightgray -0.662px -193px / 100.092% 125.13%", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
+    <div className='main gap-8 lg:mt-7 footerbg relative flex flex-col items-center justify-center lg:gap-11' style={{background: "linear-gradient(0deg, #121311 0%, #121311 100%), url(./images/footer/background.webp), lightgray -0.662px -193px / 100.092% 125.13%", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
         <div className='flex flex-col gap-8 items-center'>  
           <h4 className='font-normal text-purple-500 uppercase'> Let's connect! </h4>
           <div className='flex flex-col items-center gap-7'>
