@@ -13,14 +13,20 @@ const Work = (props) => {
 
   const scrollHandler = (e) => {
     const container = cardSlide.current
-    const divide = e.deltaY/10
-    const newPercentage = percentage + divide
-    if (newPercentage <= 300 && newPercentage >= 0) {
-      setPercentage(newPercentage);
+    const divideY = e.deltaY/10
+    const divideX = e.deltaX/10
+    const newPercentageY = percentage + divideY
+    const newPercentageX = percentage + divideX
+    if (newPercentageY <= 300 && newPercentageY >= 0) {
+      setPercentage(newPercentageY);
       container.style.transition = 'transform 0.3s ease-out';
       container.style.transform = `translate(-${percentage/4}%, 0%)`;
     }
-    console.log(newPercentage)
+    if (newPercentageX <= 300 && newPercentageX >= 0) {
+      setPercentage(newPercentageX);
+      container.style.transition = 'transform 0.3s ease-out';
+      container.style.transform = `translate(-${percentage/4}%, 0%)`;
+    }
   }
 
 
