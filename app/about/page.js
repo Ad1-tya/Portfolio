@@ -4,7 +4,7 @@ import {Loading, Navbar, Education, Work, Experience, Hero, Skills, Footer} from
 export default function About(){
 
     return(
-        <section className='bg-neutral-950 flex flex-col overflow-y-scroll snap-proximity snap-y pt-8 sm:pt-0'>
+        <section className='bg-neutral-950 flex flex-col overflow-y-auto snap-proximity snap-y pt-8 sm:pt-0'>
             <Navbar label="about" link="works"/>
             <Hero />
             <Education />

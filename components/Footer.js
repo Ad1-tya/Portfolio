@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
         </div> 
-        <div onClick={scrollToTop} className='select-none hover:text-purple-500 text-neutral-50 text-base cursor-pointer hover:underline'> Back to top </div>
+        <div onClick={scrollToTop} className='select-none hover:text-purple-500 text-neutral-50 text-base cursor-pointer sm:hover:blur-[1px]'> Back to top </div>
 
     </div>
   )
