@@ -15,15 +15,9 @@ const Work = (props) => {
     const container = cardSlide.current
     const divideY = e.deltaY/10
     const divideX = e.deltaX/10
-    const newPercentageY = percentage + divideY
-    const newPercentageX = percentage + divideX
-    if (newPercentageY <= 300 && newPercentageY >= 0) {
-      setPercentage(newPercentageY);
-      container.style.transition = 'transform 0.3s ease-out';
-      container.style.transform = `translate(-${percentage/4}%, 0%)`;
-    }
-    if (newPercentageX <= 300 && newPercentageX >= 0) {
-      setPercentage(newPercentageX);
+    const newPercentage = percentage + divideX + divideY
+    if (newPercentage <= 300 && newPercentage >= 0) {
+      setPercentage(newPercentage);
       container.style.transition = 'transform 0.3s ease-out';
       container.style.transform = `translate(-${percentage/4}%, 0%)`;
     }
@@ -38,7 +32,7 @@ const Work = (props) => {
           alt='Card Image'
           fill={true}
           className='grayscale hover:grayscale-0 snap-center object-cover transition-all'
-          objectPosition={`${percentage/4}% 100%`}
+          objectPosition={`${percentage/5}% 100%`}
           sizes='(max-width: 808px) 50vw, 100vw'
           priority={true}
         />
