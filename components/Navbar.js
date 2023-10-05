@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const Navbar = (props) => {
   return (
-    <div className={`flex items-center h-max sm:snap-start snap-end justify-between ${props.label=="about"? `main mx-auto inset-0`:`w-full px-[10%]`} absolute sm:snap-start z-50 py-4`}>
+    <div className={`main flex items-center h-max mx-auto inset-0 snap-start justify-between absolute z-50 py-4`}>
         <Image
             src="./logo.svg"
             alt="Adi Logo"

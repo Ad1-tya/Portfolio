@@ -44,7 +44,7 @@ const Work = (props) => {
 
   return (
     <section className='w-screen h-screen flex items-center' onWheel={scrollHandler}>
-        <div ref={cardSlide} className='relative px-0 pl-[10%] overflow-x-auto sm:overflow-visible sm:top-[10%] sm:pl-[50%] flex items-start gap-4 lg:gap-6 snap-mandatory snap-x scrollbar-hide' >
+        <div ref={cardSlide} className='relative px-[10%] overflow-x-auto sm:overflow-visible sm:top-[10%] sm:pl-[50%] flex items-start gap-4 lg:gap-6 snap-mandatory snap-x scrollbar-hide' >
             {Cards}
         </div>  
     </section>
