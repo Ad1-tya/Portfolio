@@ -6,35 +6,33 @@ import Image from 'next/image'
 const Skills = () => {
 
   const desList = skillsData.Designing.map(items => (
-    <div className='skillscard relative'>
+    <div key={items.id} className='skillscard relative'>
       <Image 
         src={`./images/skills/${items.img}`}
-        objectFit='contain'
-        layout='fill'
+        width={48}
+        height={48}
         alt='logos'
         sizes='(max-width: 808px) 50vw, 100vw'
-        placeholder='blur'
-        className='max-w-[48px] max-h-[48px] m-auto inset-0'
+        className='max-w-[48px] max-h-[48px] m-auto inset-0 object-contain'
       />
     </div> 
   ))
 
   const feList = skillsData.Frontend.map(items => (
-    <div className='skillscard relative'>
+    <div key={items.id} className='skillscard relative'>
       <Image 
         src={`./images/skills/${items.img}`}
-        objectFit='contain'
-        layout='fill'
+        width={48}
+        height={48}
         alt='logos'
-        className='max-w-[48px] max-h-[40px] m-auto inset-0'
+        className='max-w-[48px] max-h-[40px] m-auto inset-0 object-contain'
         sizes='(max-width: 808px) 50vw, 100vw'
-        placeholder='blur'
       />
     </div> 
   ))
 
   return (
-    <div id='skills' className='main flex flex-col'>
+    <div id='skills' className='snap-start main flex flex-col'>
         <Heading text="Skills" />
         <div className='flex gap-6 items-start content-center lg:gap-11 self-stretch flex-wrap flex-1'>
             <div className='flex flex-col items-start gap-5'>

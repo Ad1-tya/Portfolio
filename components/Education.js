@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Education = () => {
 
   const Cards = educationData.map(items => (
-    <div className='relative w-full'>
+    <div key={items.id} className='relative w-full'>
       <div className='flex-col-reverse gap-3 p-4 educard flex sm:flex-col items-start justify-between self-stretch w-full h-max sm:p-6 z-10'>
         <div className='flex flex-col items-start gap-6'>
           <h4>{items.subject}</h4>
@@ -27,7 +27,7 @@ const Education = () => {
   ))
 
   return (
-    <div id='education' className='main flex flex-col'>
+    <div id='education' className='main snap-start flex flex-col'>
         <Heading text="Education" />
         <div className='flex flex-col sm:flex-row items-start gap-5'>
             {Cards}

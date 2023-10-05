@@ -89,7 +89,7 @@ module.exports = {
         '9': '96px',
         '10': '120px',
         '11': '160px'
-      },
+      }
     },
   },
   corePlugins: {

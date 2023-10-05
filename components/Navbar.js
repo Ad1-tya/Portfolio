@@ -1,24 +1,20 @@
-"use client";
-
 import React from 'react'
-import { Link } from 'react-scroll'
-import Image from 'next/image'
 
-const Navbar = () => {
+import Image from 'next/image'
+import Link from 'next/link'
+
+const Navbar = (props) => {
   return (
-    <div className="main z-40 justify-center py-4 flex sm:justify-between">
+    <div className={`flex items-center h-max sm:snap-start snap-end justify-between ${props.label=="about"? `main mx-auto inset-0`:`w-full px-[10%]`} absolute sm:snap-start z-50 py-4`}>
         <Image
             src="./logo.svg"
             alt="Adi Logo"
-            sizes='(max-width: 808px) 50vw, 100vw'
-            placeholder='blur'
+            width={40}
+            height={24}
+            className='grayscale'
         />
-        <div className="hidden sm:text-neutral-500 sm:text-sm sm:flex sm:items-center sm:gap-7">
-            <Link to="works" spy={true} smooth={true} offset={200} duration={500} className='hover:text-purple-500 cursor-pointer'>WORKS</Link>
-            <Link to="experience" spy={true} smooth={true} offset={350} duration={500} className='hover:text-purple-500 cursor-pointer'>EXPERIENCE</Link>
-            <Link to="skills" spy={true} smooth={true} offset={450} duration={500} className='hover:text-purple-500 cursor-pointer'>SKILLS</Link>
-            <Link to="education" spy={true} smooth={true} offset={550} duration={500} className='hover:text-purple-500 cursor-pointer'>EDUCATION</Link>
-        </div>
+        <div className='uppercase text-base text-neutral-500 font-bold'>{props.label}</div>
+        <Link href={`/${ props.link=="works"? ``: `${props.link}`}`} className=' text-sm uppercase text-purple-500 hover:blur-[1px]'>{props.link}</Link>
     </div>
   )
 }
