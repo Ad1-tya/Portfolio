@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <section className='w-screen h-screen overflow-hidden bg-neutral-950'>
-      <Navbar label="works" link="about"/>
+      <Navbar label="Works" link="About"/>
       <Work />
     </section>
   )
