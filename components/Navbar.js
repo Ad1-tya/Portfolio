@@ -13,9 +13,9 @@ const Navbar = (props) => {
             height={24}
             className='grayscale'
         />
-        <div className='flex flex-col gap-3'>
-          <div className='text-base text-neutral-300 font-bold'>{props.label}</div>
-          <Link href={`/${ props.link=="Works"? ``: `${props.link}`}`} className=' text-base text-neutral-500 hover:blur-[1px]'>{props.link}</Link>
+        <div className='flex gap-3'>
+          <div className='text-sm capitalize text-neutral-300 font-bold'>{props.label}</div>
+          <Link href={`/${ props.link=="works"? ``: `${props.link}`}`} className='capitalize text-sm text-neutral-500 hover:blur-[1px]'>{props.link}</Link>
         </div>
     </div>
   )
