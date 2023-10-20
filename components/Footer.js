@@ -15,9 +15,9 @@ const Footer = () => {
   return (
     <div className='snap-start main gap-8 lg:mt-7 footerbg relative flex flex-col items-center justify-center lg:gap-11' style={{background: "linear-gradient(0deg, #121311 0%, #121311 100%), url(./images/footer/background.webp), lightgray -0.662px -193px / 100.092% 125.13%", backgroundRepeat:"no-repeat", backgroundSize:"cover"}}>
         <div className='flex flex-col gap-8 items-center'>  
-          <h4 className='font-normal text-purple-500 uppercase'> Let's connect! </h4>
+          <h2 className='font-normal text-purple-500 uppercase'> Let's connect! </h2>
           <div className='flex flex-col items-center gap-7'>
-            <p> mraditya2017@gmail.com </p>
+            <Link href="mailto:mraditya2017@gmail.com" className='select-none hover:text-purple-500 text-purple-50 text-base cursor-pointer sm:hover:blur-[1px]'> mraditya2017@gmail.com </Link>
             <div className='flex items-start gap-5'>
               <Link href="https://www.facebook.com/ad1.tya03/" target='_blank' rel='noopener noreferrer'><svg className="fill-neutral-50 transition-all sm:hover:fill-purple-500 sm:hover:blur-[1px] cursor-pointer" width="48" height="49"><path d="M33 13h-6a2 2 0 0 0-2 2v6h8a.7.7 0 0 1 .68.92l-1.48 4.4a1 1 0 0 1-.94.68H25v15a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V27h-3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1h3v-6a8 8 0 0 1 8-8h7a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1Z"/></svg></Link>
               <Link href="https://www.instagram.com/ad1.tya_pandey/" target='_blank' rel='noopener noreferrer'><svg className="fill-neutral-50 sm:hover:fill-purple-500 sm:hover:blur-[1px] cursor-pointer" width="48" height="49" fill="none"><path fill-rule="evenodd" d="M32 7H16C10.477 7 6 11.477 6 17v16c0 5.523 4.477 10 10 10h16c5.523 0 10-4.477 10-10V17c0-5.523-4.477-10-10-10Zm6.5 26a6.52 6.52 0 0 1-6.5 6.5H16A6.52 6.52 0 0 1 9.5 33V17a6.52 6.52 0 0 1 6.5-6.5h16a6.52 6.52 0 0 1 6.5 6.5v16Zm-5-15.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM24 16a9 9 0 1 0 9 9 8.98 8.98 0 0 0-9-9Zm-5.5 9a5.5 5.5 0 1 0 11 0 5.5 5.5 0 0 0-11 0Z" clip-rule="evenodd"/></svg></Link>
