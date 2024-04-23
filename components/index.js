@@ -8,6 +8,7 @@ import Experience from './Experience'
 import Skills from './Skills'
 import Footer from './Footer'
 import Loading from './Loading'
+import Explore from './Explore'
 
 export{
     Button,
@@ -19,5 +20,6 @@ export{
     Education,
     Skills,
     Footer,
-    Loading
+    Loading,
+    Explore
 }

@@ -11,6 +11,14 @@
     @apply bg-purple-600 text-neutral-50
   }
 
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: 0;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+  }
+
   .main{
     @apply px-3 gap-8 py-7 mx-auto self-stretch sm:px-[40px] sm:py-10 xl:w-[1200px]
   }
@@ -48,15 +56,8 @@
   }
 
   .educard{
-    background-color: red;
-    background: radial-gradient(117.82% 117.82% at -7.81% -6.96%, rgba(190, 142, 242, 0.08) 0%, rgba(165, 98, 234, 0.10) 100%);
     backdrop-filter: blur(18px);
     transition: all .3s ease-in-out;
-    filter: grayscale(100%);
-  }
-
-  .educard:hover{
-    filter: none;
   }
 
   .skillscard{
@@ -85,6 +86,25 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  .explorebg{
+    background: linear-gradient(0deg, #121311 0%, #121311 100%), url(/images/works.webp), lightgray -0.662px -193px / 100.092% 125.13%;
+    background-repeat: no-repeat;
+    background-position : top;
+    background-size: cover;
+    transition:cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition-duration:800ms;
+    background-blend-mode: hard-light, normal;
+    width: 100%;
+  }
+
+  .explorebg:hover{
+    background-position: center;
+  }
+
+  .textglow{
+    text-shadow: 0px 0px 200.032px #A562EA, 0px 0px 114.304px #A562EA, 0px 0px 66.677px #A562EA, 0px 0px 33.339px #A562EA, 0px 0px 9.525px #A562EA, 0px 0px 4.763px #A562EA;
   }
 
 }

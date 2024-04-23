@@ -1,5 +1,6 @@
 import { Loading } from '@/components';
 import './globals.css'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: 'Adi',
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className='scrollbar-hide'>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
